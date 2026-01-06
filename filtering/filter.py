@@ -51,7 +51,7 @@ class Filter(object):
         return signal.butter(order, frequency, filter_type, fs=fs, output="sos")
 
     @staticmethod
-    def pad_window(x, centre_index, min_window):
+    def pad_window(x, time_index, min_window):
         """Perform minimum window padding of an array.
 
         Note:
